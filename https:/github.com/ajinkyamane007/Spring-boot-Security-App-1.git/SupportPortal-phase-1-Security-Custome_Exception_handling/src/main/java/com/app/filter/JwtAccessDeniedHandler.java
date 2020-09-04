@@ -28,7 +28,7 @@ public class JwtAccessDeniedHandler  implements AccessDeniedHandler{
 		HttpResponse httpresponse = new HttpResponse(
 				HttpStatus.UNAUTHORIZED.value(),    // 401
 				HttpStatus.UNAUTHORIZED,            // UNAUTHORIZED
-				HttpStatus.UNAUTHORIZED.getReasonPhrase().toUpperCase(), // UNAUTHORIZED
+				HttpStatus.UNAUTHORIZED.getReasonPhrase().toUpperCase(), // Unauthorized -> UNAUTHORIZED
 				SecurityConstant.ACCESS_DENIED_MESSAGE);   // You do not have permission to access this page
 		
 		response.setContentType(MediaType.APPLICATION_JSON_VALUE); // APPLICATION_JSON_VALUE = "application/json";

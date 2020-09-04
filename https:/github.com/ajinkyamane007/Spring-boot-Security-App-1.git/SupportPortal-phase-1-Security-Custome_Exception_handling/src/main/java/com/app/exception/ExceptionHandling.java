@@ -39,7 +39,7 @@ public class ExceptionHandling implements ErrorController {
 
 	@ExceptionHandler(DisabledException.class)
 	public ResponseEntity<HttpResponse> accountDisabledException() {
-		return createHttpResponse(HttpStatus.BAD_REQUEST, ACCOUNT_DISABLED);
+		return createHttpResponse(HttpStatus.BAD_REQUEST, ACCOUNT_DISABLED);  // httpStatus, message)
 	}
 
 	@ExceptionHandler(BadCredentialsException.class)
